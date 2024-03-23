@@ -7,11 +7,11 @@
   framework = "Next.js"
 
 [build]
-  command = "npm install"
+  command = "bun insstall"
 
 [config]
   sample = "sample.env.local"
   output = ".env.local"
 
 [post-build]
-  message = "Run `npm run dev` to get up and running locally."
+  message = "Run `bun run dev` to get up and running locally."

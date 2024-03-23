@@ -196,7 +196,7 @@ const DeepgramContextProvider = ({ children }: DeepgramContextInterface) => {
       });
 
       connection.addListener(LiveTranscriptionEvents.Close, () => {
-        toast("The connection to Deepgram closed, we'll attempt to reconnect.");
+        toast("The connection to closed, we'll attempt to reconnect.");
         setConnectionReady(false);
         connection.removeAllListeners();
         setConnection(undefined);
@@ -204,7 +204,7 @@ const DeepgramContextProvider = ({ children }: DeepgramContextInterface) => {
 
       connection.addListener(LiveTranscriptionEvents.Error, () => {
         toast(
-          "An unknown error occured. We'll attempt to reconnect to Deepgram."
+          "An unknown error occured. We'll attempt to reconnect. If the issue persists, please refresh the page."
         );
         setConnectionReady(false);
         connection.removeAllListeners();

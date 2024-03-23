@@ -32,9 +32,9 @@ const MessageMetadataContextProvider = ({
     setMessageData((q) => [...q, queueItem]);
   }, []);
 
-  // useEffect(() => {
-  //   console.log(messageData);
-  // }, [messageData]);
+   useEffect(() => {
+     console.log(messageData);
+   }, [messageData]);
 
   return (
     <MessageMetadataContext.Provider
