@@ -61,7 +61,7 @@ export default function RootLayout({
             </PlayQueueContextProvider>
           </MicrophoneContextProvider>
         </ToastContextProvider>
-        <GoogleTagManager gtmId="GTM-5R73N627" />
+        <GoogleTagManager gtmId="" />
       </body>
     </html>
   );
